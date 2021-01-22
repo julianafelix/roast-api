@@ -3,7 +3,7 @@ class CreateRoastEvents < ActiveRecord::Migration[6.0]
     create_table :roast_events do |t|
       t.string :name
       t.time :time
-      t.temp :temp
+      t.float :temp
       t.integer :roast_profile_id
 
       t.timestamps

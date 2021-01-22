@@ -4,9 +4,9 @@ class CreateRoastProfiles < ActiveRecord::Migration[6.0]
       t.string :coffee
       t.date :date
       t.float :batch_size
-      t.time :time
-      t.float :temp
-      t.boolean :is_celsius
+      t.time :times, array: true, default: []
+      t.float :temps, array: true, default: []
+      t.boolean :is_celsius, default: false
       t.integer :user_id
 
       t.timestamps
