@@ -1,0 +1,2 @@
+class RoastProfilesController < ApplicationController
+end
